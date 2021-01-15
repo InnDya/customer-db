@@ -54,7 +54,7 @@ export default function CustomerCreatePage() {
                 {renderInput("website", "Website", "url")}
                 {renderInput("email", "Customer Email", "email")}
                 {renderInput("phoneNumber", "Phone Number", "tel")}
-                <button className="btn btn-secondary mt-3" type="submit">Create Customer</button>
+                <button className="btn btn-secondary mt-3 mb-5" type="submit">Create Customer</button>
             </form>
         </div>
     )

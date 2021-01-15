@@ -74,7 +74,7 @@ export default function CustomerUpdatePage(props) {
             {renderInput("website", "Website", "url")}
             {renderInput("email", "Customer Email", "email")}
             {renderInput("phoneNumber", "Phone Number", "tel")}
-            <button className="btn btn-secondary mt-3" type="submit">Update Customer</button>
+            <button className="btn btn-secondary mt-3 mb-5" type="submit">Update Customer</button>
         </form>
         </div>
     )

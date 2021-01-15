@@ -38,7 +38,7 @@ export default function CustomerDetailPage(props) {
     }
 
     return (
-        <div>
+        <div> 
         <LoggedInUser />
             <h1 className="mb-5 text-center">Customer Detail Page</h1>
             {console.log(customerItem)}

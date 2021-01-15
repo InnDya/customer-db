@@ -21,9 +21,9 @@ export default function LoggedInUser() {
     }
 
     return (
-        <div>
+        <div className="btn btn-outline-secondary mt-5 mb-5">
             {!me && <p></p>}
-            {me && <p>{me.email} {me.firstName} {me.lastName}</p>}
+            {me && <p>User: {me.email} {me.firstName} {me.lastName}</p>}
         </div>
     )
 }
