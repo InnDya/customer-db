@@ -38,28 +38,15 @@ export default function LoginPage() {
     }
 
     return (
-        <LoginStyled className="container">
-            <div className="row mt-5">
-                <div className="col">
-                    <div className="col-sm-12 col-md-8">
-                        <div className="card signin-card bg-light">
-                            <div className="card-block">
-                                <form className="sigin-form p-5" onSubmit={handleOnSubmit} >
-                                    <div className="form-group">
-                                        <label className="h4 text-muted">Email</label>
-                                        <input className="form-control" name="email" value={formData.email} onChange={handleOnChange} />
-                                    </div>
-                                    <div className="form-group">
-                                        <label className="h4 text-muted">Password</label>
-                                        <input className="form-control" name="password" value={formData.password} onChange={handleOnChange} />
-                                    </div>
-                                    <button className="btn btn-secondary mt-3" type="submit">Log In</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <LoginStyled className="container col-sm-12 col-md-6">
+            <form className="form-signin" onSubmit={handleOnSubmit} >
+                <h1 className="h3 mb-3 mt-5 fw-normal">Please Log In</h1>
+                <label className="visually-hidden">Email</label>
+                <input className="form-control mb-3" name="email" value={formData.email} onChange={handleOnChange} />
+                <label className="visually-hidden">Password</label>
+                <input className="form-control mb-3" name="password" value={formData.password} onChange={handleOnChange} />
+                <button className="w-100 btn btn-lg btn-secondary mb-5 mt-3" type="submit">Log In</button>
+            </form>
         </LoginStyled>
     )
 }

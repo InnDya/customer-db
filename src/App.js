@@ -1,6 +1,5 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Footer from './components/Footer';
 import Header from './components/Header';
 import PrivateRoute from './components/PrivateRoute';
 import CustomerCreatePage from './pages/CustomerCreatePage';
@@ -29,8 +28,6 @@ function App() {
         </Switch>
 
       </div>
-
-      <Footer />
 
     </div>
   );
