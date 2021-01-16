@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import CustomerListItem from '../components/CustomerListItem';
-import LoggedInUser from '../components/LoggedInUser';
 
 export default function CustomerListPage() {
     const [customerList, setCustomerList] = useState([]);
@@ -25,7 +25,8 @@ export default function CustomerListPage() {
 
     return (
         <div>
-            <LoggedInUser/>
+            <Link className="btn btn-secondary mt-5 mb-5" to="/home/create">Create Customer</Link>
+
             {customerList.map(item => {
                 return <CustomerListItem key={item.id} customerData={item} />
             })}

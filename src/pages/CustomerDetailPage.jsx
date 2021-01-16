@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, Link } from 'react-router-dom';
-import LoggedInUser from '../components/LoggedInUser';
 
 export default function CustomerDetailPage(props) {
     const customerId = props.match.params.id;
@@ -39,8 +38,7 @@ export default function CustomerDetailPage(props) {
 
     return (
         <div> 
-        <LoggedInUser />
-            <h1 className="mb-5 text-center">Customer Detail Page</h1>
+            <h1 className="mt-5 mb-5 text-center">Customer Detail Page</h1>
             {console.log(customerItem)}
             {!customerItem
                 ?
@@ -50,8 +48,8 @@ export default function CustomerDetailPage(props) {
                 :
                 (
                     <div>
-                        <table className="table table-bordered table-hover">
-                            <tbody>
+                        <table className="table table-bordered">
+                            <tbody className="table-hover">
                                 <tr>
                                     <th>Name</th>
                                     <td>{customerItem.name}</td>
@@ -95,7 +93,7 @@ export default function CustomerDetailPage(props) {
                             </tbody>
                         </table>
                         <button className="btn btn-secondary mt-3" onClick={deleteCustomer}>Delete Customer</button>
-                        <Link className="btn btn-secondary stretched-link ml-3 mt-3" to={`/home/${customerId}/edit`}>Edit Customer</Link>
+                        <Link className="btn btn-secondary ml-3 mt-3" to={`/home/${customerId}/edit`}>Edit Customer</Link>
                     </div>
                 )
             } 

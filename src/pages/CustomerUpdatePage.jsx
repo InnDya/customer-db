@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'; 
 import { useHistory } from 'react-router-dom';
-import LoggedInUser from '../components/LoggedInUser';
 
 export default function CustomerUpdatePage(props) {
     const customerId = props.match.params.id;
@@ -63,8 +62,7 @@ export default function CustomerUpdatePage(props) {
 
     return (
         <div>
-        <LoggedInUser />
-        <h1 className="mb-5 text-center">Edit Customer</h1>
+        <h1 className="mt-5 mb-5 text-center">Edit Customer</h1>
         <form className="form-group" onSubmit={handleOnSubmit}>
             {renderInput("name", "Customer Name")}
             {renderInput("organisationNr", "Organisation Number")}

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import LoggedInUser from '../components/LoggedInUser';
 
 export default function CustomerCreatePage() {
     const [formData, setFormData] = useState({});
@@ -43,8 +42,7 @@ export default function CustomerCreatePage() {
 
     return (
         <div>
-            <LoggedInUser />
-            <h1 className="mb-5 text-center">Create Customer</h1>
+            <h1 className="mt-5 mb-5 text-center">Create Customer</h1>
             <form className="form-group" onSubmit={handleOnSubmit}>
                 {renderInput("name", "Customer Name")}
                 {renderInput("organisationNr", "Organisation Number")}

@@ -9,37 +9,12 @@ const HeaderStyled = styled.nav`
 
     a {
         color: #fff;
-        font-size: 18px;
     } 
     
     ul {
-        list-style: none;
         float: right;
-    }
-
-    ul li {
-        float:left;
-    }
-
-    ul li a {
-        display: block;
-        padding: 20px;
-        text-align: center;
-    }
-
-    ul li a:hover {
-        background: #444;
-        color: #f7c08a;
-    }
-
-    button {
-        border-color: #fff;
-        cursor: pointer;
-    }
-
-    button:hover {
-        border-color: #f7c08a;
-        background: #444;
+        color: #fff;
+        list-style: none;
     }
 
 `
