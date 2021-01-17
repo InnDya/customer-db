@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 
+
 export default function CustomerDetailPage(props) {
     const customerId = props.match.params.id;
     const [customerItem, setCustomerItem] = useState(null);
@@ -48,8 +49,8 @@ export default function CustomerDetailPage(props) {
                 :
                 (
                     <div>
-                        <table className="table table-bordered">
-                            <tbody className="table-hover">
+                        <table className="table table-bordered table-hover">
+                            <tbody>
                                 <tr>
                                     <th>Name</th>
                                     <td>{customerItem.name}</td>
@@ -93,7 +94,7 @@ export default function CustomerDetailPage(props) {
                             </tbody>
                         </table>
                         <button className="btn btn-secondary mt-3" onClick={deleteCustomer}>Delete Customer</button>
-                        <Link className="btn btn-secondary ml-3 mt-3" to={`/home/${customerId}/edit`}>Edit Customer</Link>
+                        <Link className="btn btn-secondary mt-3 ml-5" to={`/home/${customerId}/edit`}>Edit Customer</Link>
                     </div>
                 )
             } 

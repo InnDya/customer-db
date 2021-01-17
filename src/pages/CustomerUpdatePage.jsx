@@ -54,7 +54,6 @@ export default function CustomerUpdatePage(props) {
             }
         })
         .then(res => res.json())
-        //.then(()  => history.push(`customers/${customerId}/`))
         .then(() => {
             history.push('/home')
         })    

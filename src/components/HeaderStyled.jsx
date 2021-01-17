@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const HeaderStyled = styled.nav`
     background-color: #333;
 
-    h1 {
+    .navbar-home {
         float: left;
     }
 
@@ -11,8 +11,11 @@ const HeaderStyled = styled.nav`
         color: #fff;
     } 
     
-    ul {
+    .user-info {
         float: right;
+    }
+
+    ul {
         color: #fff;
         list-style: none;
     }

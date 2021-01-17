@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CustomerListItem from '../components/CustomerListItem';
 
+
 export default function CustomerListPage() {
     const [customerList, setCustomerList] = useState([]);
 
